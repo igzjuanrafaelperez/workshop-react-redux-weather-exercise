@@ -32,7 +32,7 @@ describe('sagas', () => {
 
       const serviceResponse = [{name: 'ResponseTest'}]
       expect(generator.next(serviceResponse).value).deep.equal(
-        put(weatherActions.fetchWeatherSucces(serviceResponse))
+        put(weatherActions.fetchWeatherSuccess(serviceResponse))
       , 'saga should emit a fetchWeatherSuccess action to Redux')
 
       expect(generator.next().done).equal(true)

@@ -62,7 +62,7 @@ describe('reducers', () => {
         error: null
       }
 
-      expect(weatherReducer(currentState, weatherActions.fetchWeatherSucces(weatherList))).deep.equal(expectedState)
+      expect(weatherReducer(currentState, weatherActions.fetchWeatherSuccess(weatherList))).deep.equal(expectedState)
     })
 
     it('should handle fetch weather error', () => {
